@@ -1,0 +1,382 @@
+/* Latar belakang untuk seluruh website */
+body {
+    background-image: url('../images/background.jpg'); /* Ganti dengan jalur gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Tambahkan padding untuk setiap bagian */
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+    
+}
+
+section h3 {
+    font-size: 1.2em;
+    color: rgb(175, 202, 0);
+    margin-bottom: 20px;
+
+}
+
+/* Judul di setiap bagian */
+section h2 {
+    font-size: 2em;
+    color: rgb(175, 202, 0);
+    margin-bottom: 20px;
+}
+
+section h1 {
+    font-size: 2em;
+    color: rgb(175, 202, 0);
+    margin-bottom: 20px;
+}
+/* Paragraf dalam setiap bagian */
+section p {
+    font-size: 1.2em;
+    color: rgba(178, 218, 21, 0.758);
+    line-height: 1.6;
+}
+
+/* Gaya untuk header */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(165, 161, 37);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+header h1 {
+    font-size: 3rem; /* Ukuran teks besar */
+    font-weight: bold; /* Teks lebih tebal */
+    display: inline-block;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% auto; /* Ukuran gradien diperbesar untuk menciptakan efek gerak */
+    -webkit-background-clip: text; /* Menampilkan gradien hanya di teks */
+    -webkit-text-fill-color: transparent; /* Teks transparan agar gradien terlihat */
+    animation: color-walk 5s linear infinite; /* Animasi warna berjalan */
+}
+
+@keyframes color-walk {
+    0% {
+        background-position: 0% center; /* Warna dimulai dari kiri */
+    }
+    100% {
+        background-position: 100% center; /* Warna berjalan ke kanan */
+    }
+}
+
+
+/* Gaya untuk navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Hover efek untuk navigasi */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Gaya untuk Kontainer Iframe */
+#iframe-gallery {
+    display: flex;
+    flex-direction: column; /* Susun iframe secara vertikal */
+    gap: 20px; /* Jarak antar iframe */
+    align-items: center; /* Pusatkan iframe */
+}
+
+.iframe-container {
+    width: auto; /* Lebar iframe */
+    opacity: 0; /* Sembunyikan awalnya */
+    transform: translateY(50px); /* Geser ke bawah */
+    animation: slideIn 1s ease-in-out forwards; /* Animasi geser ke atas */
+}
+
+/* Animasi Muncul Iframe */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Mulai dari posisi ke bawah */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Akhirnya di posisi semula */
+    }
+}
+
+/* Kontainer Peta */
+.map-container {
+    margin-top: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+
+
+
+
+/* Bagian Home */
+#home {
+    background-image: url('../images/'); /* Ganti dengan jalur gambar untuk Home */
+    background-size: cover; /* Pastikan gambar memenuhi seluruh bagian */
+    background-position: center; /* Pusatkan gambar */
+    background-attachment: fixed; /* Gambar tetap saat di-scroll */
+    color: white; /* Warna teks putih agar terlihat jelas */
+}
+
+/* Bagian About */
+#about {
+    background-image: url('../images/'); /* Ganti dengan jalur gambar untuk About */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Bagian Galeri */
+#gallery {
+    background-image: url('../images/'); /* Ganti dengan jalur gambar untuk Galeri */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Bagian Kontak */
+#contact {
+    background-image: url('../images/contact-bg.jpg'); /* Ganti dengan jalur gambar untuk Kontak */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.content-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk teks */
+    border-radius: 10px;
+    padding: 200px;
+    margin: 20px;
+    width: 80%;
+}
+
+/* Animasi fade-in untuk video */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gaya untuk kontainer bagian About */
+#about {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+/* Menambahkan animasi ketika bagian About muncul */
+#about.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Judul di bagian About */
+#about h2 {
+    font-size: 2em;
+    color: #FFD700; /* Warna emas untuk judul */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Teks paragraf dalam bagian About */
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Gaya untuk gambar dalam bagian About */
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Setiap gambar dalam About */
+.about-image {
+    width: 45%; /* Lebar gambar */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Gambar pada hover (zoom in effect) */
+.about-image:hover {
+    transform: scale(1.05);
+}
+
+/* Efek transisi untuk gambar */
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animasi fade-in untuk teks */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media queries untuk tampilan mobile */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 1.8em;
+    }
+
+    #about p {
+        font-size: 1em;
+    }
+
+    .about-images {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 80%; /* Lebar gambar lebih besar di perangkat mobile */
+        margin-bottom: 20px;
+    }
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Pusatkan video */
+    margin-top: 20px; /* Jarak antara video dan teks */
+    animation: fadeIn 1.5s ease-in-out; /* Terapkan animasi fade-in */
+}
+
+.video-container iframe {
+    border-radius: 10px; /* Tambahkan sudut melengkung pada video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
+    height: 360; /* Sesuaikan tinggi secara proporsional */
+    opacity: 0; /* Awalnya tidak terlihat */
+    animation: fadeIn 2s ease-in-out 0.5s forwards; /* Animasi fade-in dengan jeda */
+}
+
+.content-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Kontainer Utama untuk Galeri Video Horizontal */
+#horizontal-video-gallery {
+    display: flex;
+    flex-direction: row; /* Susun video secara horizontal */
+    overflow: hidden; /* Sembunyikan elemen di luar layar */
+    justify-content: center; /* Pusatkan video */
+    gap: 20px; /* Jarak antar video */
+}
+
+/* Gaya Video Slide */
+.video-slide {
+    width: 80%; /* Lebar video 80% dari layar */
+    height: 50vh; /* Tinggi video 50% dari layar */
+    position: relative;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Efek transisi */
+    border-radius: 10px; /* Sudut melengkung */
+    overflow: hidden;
+}
+
+/* Gaya Iframe */
+.video-slide iframe {
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    border: none;
+    border-radius: 10px; /* Sudut melengkung */
+}
+
+/* Efek Transisi Besar saat Sentuh */
+.video-slide:active {
+    transform: scale(1.2); /* Perbesar video saat disentuh */
+    z-index: 10; /* Agar video yang disentuh berada di depan */
+}
+
+/* Animasi Slide untuk Video */
+@keyframes slideRight {
+    0% {
+        transform: translateX(100%); /* Mulai dari luar kanan */
+    }
+    100% {
+        transform: translateX(0); /* Masuk ke posisi semula */
+    }
+}
+
+
+
+
